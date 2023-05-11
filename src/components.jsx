@@ -1,4 +1,4 @@
-import App from './App'
+
 
 const Person = (props) => {
     
@@ -22,6 +22,7 @@ console.log(props)
           <li key={index}>{item}</li>
         ))}
         </ul>
+        <p>Jugador nivel Senior ? {props.senior ? "Super Senior": "Trainee"}</p>
         
 
     </div>

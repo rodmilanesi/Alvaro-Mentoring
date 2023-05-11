@@ -1,10 +1,13 @@
-import { useState } from 'react'
+
 import reactLogo from './assets/evel.svg'
 import './App.css'
 import Person from './components'
 
 function App() {
-  
+  const edadPeluca = 33
+  const pelucaSenior = true
+  const edadRod = 34
+  const rodSenior = false
 
   return (
     <>
@@ -14,8 +17,8 @@ function App() {
         </a>
       </div>
       <h1 className = "titleGame">Juego del Dev.</h1>
-        <Person nombre="Álvaro" edad="33" nickname="Peluca" info={{estadoCivil: 'Casado', esposa:'Karina', hijos:'El gato'}} myArray = {["Programar", "Desarrollar", "Tener Peluca", "El Niño de las 4 A"]}/>
-        <Person nombre="Rodrigo" edad="33" nickname="Vairax" info={{estadoCivil: 'Casado', esposa:'Ángela', hijos:'Abby'}} myArray = {["Programar", "Desarrollo Trainee", "Piloto Karting", "Tener Pasaporte Italiano"]}/>
+        <Person nombre="Álvaro" edad= {edadPeluca} nickname="Peluca" senior = {pelucaSenior} info={{estadoCivil: 'Casado', esposa:'Karina', hijos:'El gato'}} myArray = {["Programar", "Desarrollar", "Tener Peluca", "El Niño de las 4 A"]}/>
+        <Person nombre="Rodrigo" edad={edadRod} nickname="Vairax" senior = {rodSenior} info={{estadoCivil: 'Casado', esposa:'Ángela', hijos:'Abby'}} myArray = {["Programar", "Desarrollo Trainee", "Piloto Karting", "Tener Pasaporte Italiano"]}/>
 
         
     
